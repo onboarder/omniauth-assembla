@@ -1,24 +1,18 @@
-# Omniauth::Assembla
+# OmniAuth Assembla
 
-TODO: Write a gem description
+This gem is the unofficial Assembla strategy for OmniAuth.
 
-## Installation
+## Basic Usage
 
-Add this line to your application's Gemfile:
+```
+use OmniAuth::Builder do
+  provider :assembla, ENV['ASSEMBLA_APP_ID'], ENV['ASSEMBLA_APP_SECRET']
+end
+```
 
-    gem 'omniauth-assembla'
+## Supported Flows
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install omniauth-assembla
-
-## Usage
-
-TODO: Write usage instructions here
+Supports the web services flow as described by the [Authentication](http://api-doc.assembla.com/content/authentication.html#web_service) documentation at Assembla. This is the typical 3-step authentication flow for web applications.
 
 ## Contributing
 
