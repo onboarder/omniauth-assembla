@@ -2,6 +2,8 @@
 
 This gem is the unofficial Assembla strategy for OmniAuth.
 
+[![Build Status](https://travis-ci.org/onboarder/omniauth-assembla.png)](https://travis-ci.org/onboarder/omniauth-assembla)
+
 ## Basic Usage
 
 ```
