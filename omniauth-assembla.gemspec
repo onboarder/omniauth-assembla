@@ -5,12 +5,12 @@ require 'omniauth/assembla/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-assembla"
-  spec.version       = Omniauth::Assembla::VERSION
+  spec.version       = OmniAuth::Assembla::VERSION
   spec.authors       = ["Derek Hopper"]
   spec.email         = ["hopper.derek@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{OmniAuth strategy for Assembla}
+  spec.summary       = %q{OmniAuth strategy for Assembla}
+  spec.homepage      = "https://github.com/onboarder/omniauth-assembla"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  spec.add_dependency 'omniauth', '~> 1.0'
+  spec.add_dependency 'omniauth-oauth2', '~> 1.0'
+
+  spec.add_development_dependency 'rspec', '~> 2.7'
+  spec.add_development_dependency 'rack-test'
+  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'webmock'
 end
